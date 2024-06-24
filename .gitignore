@@ -1,0 +1,8 @@
+.venv/
+*.log
+*.pyc
+venv/
+node_modules/
+secrets.toml
+*.env
+prompts.py

@@ -1,0 +1,165 @@
+{
+  "version": 3,
+  "targets": {
+    "net6.0": {
+      "LLamaSharp/0.5.1": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/LLamaSharp.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/LLamaSharp.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "LLamaSharp.Backend.Cuda12/0.5.1": {
+        "type": "package",
+        "runtimeTargets": {
+          "runtimes/linux-x64/native/libllama.so": {
+            "assetType": "native",
+            "rid": "linux-x64"
+          },
+          "runtimes/osx-x64/native/_._": {
+            "assetType": "native",
+            "rid": "osx-x64"
+          },
+          "runtimes/win-x64/native/libllama.dll": {
+            "assetType": "native",
+            "rid": "win-x64"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "LLamaSharp/0.5.1": {
+      "sha512": "mTO6OXKkKGWDhuj7RU37O6NOSzVZhUmdrpgeI/l+Gx4pw4Z3nBksI1ERu0tcK7bZ62FtLuEoEf6OKzzysWD/4g==",
+      "type": "package",
+      "path": "llamasharp/0.5.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "lib/net6.0/LLamaSharp.dll",
+        "lib/net6.0/LLamaSharp.xml",
+        "lib/net7.0/LLamaSharp.dll",
+        "lib/net7.0/LLamaSharp.xml",
+        "lib/netstandard2.0/LLamaSharp.dll",
+        "lib/netstandard2.0/LLamaSharp.xml",
+        "llamasharp.0.5.1.nupkg.sha512",
+        "llamasharp.nuspec"
+      ]
+    },
+    "LLamaSharp.Backend.Cuda12/0.5.1": {
+      "sha512": "T6k9Oc8d3K+8ybKewOolibTjKvXlYA4bfd0lYxWFY+IkcxU2HJ9qeiodGhg441MCPpKpBoMbg8gvgvse/5nA1w==",
+      "type": "package",
+      "path": "llamasharp.backend.cuda12/0.5.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "build/netstandard2.0/SciSharp.TensorFlow.Redist.props",
+        "llamasharp.backend.cuda12.0.5.1.nupkg.sha512",
+        "llamasharp.backend.cuda12.nuspec",
+        "runtimes/linux-x64/native/libllama.so",
+        "runtimes/osx-x64/native/_._",
+        "runtimes/win-x64/native/libllama.dll"
+      ]
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net6.0": [
+      "LLamaSharp >= 0.5.1",
+      "LLamaSharp.Backend.Cuda12 >= 0.5.1"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\kerem\\.nuget\\packages\\": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\Users\\kerem\\Desktop\\CV için\\BetterBook\\local_version\\LLMHotel\\LLMHotel\\LLMHotel.csproj",
+      "projectName": "LLMHotel",
+      "projectPath": "C:\\Users\\kerem\\Desktop\\CV için\\BetterBook\\local_version\\LLMHotel\\LLMHotel\\LLMHotel.csproj",
+      "packagesPath": "C:\\Users\\kerem\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\kerem\\Desktop\\CV için\\BetterBook\\local_version\\LLMHotel\\LLMHotel\\obj\\",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "C:\\Users\\kerem\\AppData\\Roaming\\NuGet\\NuGet.Config"
+      ],
+      "originalTargetFrameworks": [
+        "net6.0"
+      ],
+      "sources": {
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "projectReferences": {}
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "net6.0": {
+        "targetAlias": "net6.0",
+        "dependencies": {
+          "LLamaSharp": {
+            "target": "Package",
+            "version": "[0.5.1, )"
+          },
+          "LLamaSharp.Backend.Cuda12": {
+            "target": "Package",
+            "version": "[0.5.1, )"
+          }
+        },
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48",
+          "net481"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "downloadDependencies": [
+          {
+            "name": "Microsoft.AspNetCore.App.Ref",
+            "version": "[6.0.26, 6.0.26]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Host.win-x64",
+            "version": "[6.0.26, 6.0.26]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Ref",
+            "version": "[6.0.26, 6.0.26]"
+          },
+          {
+            "name": "Microsoft.WindowsDesktop.App.Ref",
+            "version": "[6.0.26, 6.0.26]"
+          }
+        ],
+        "frameworkReferences": {
+          "Microsoft.AspNetCore.App": {
+            "privateAssets": "none"
+          },
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101\\RuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}
